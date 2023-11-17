@@ -1,0 +1,59 @@
+.hero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(src/components/img/knockouts-logo.png);
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 56vh;
+  margin: 0;
+}
+.hero h1 {
+  color: white;
+  margin-top: 90px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px;
+}
+.hero_btn {
+  padding: 20px 30px;
+  width: 300px;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: all 500ms;
+  background-color: #f4e409;
+  border: none;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #f4e409, 0 0 10px #f4e409, 0 0 20px #f4e409,
+    0 0 30px #f4e409;
+  margin: auto;
+}
+
+.hero_btn:hover {
+  transform: translateY(10px);
+  cursor: pointer;
+}
+
+@media (min-width: 720px) {
+  .hero {
+    height: 90vh;
+  }
+  .hero h1 {
+    margin-top: 200px;
+    font-size: 3rem;
+  }
+  .hero_btn {
+    width: 350px;
+  }
+}

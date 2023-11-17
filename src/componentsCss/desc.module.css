@@ -1,0 +1,89 @@
+.desc {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.visitanoscontainer {
+  background-color: #ffbf31;
+  color: black;
+}
+
+.menucontainer {
+  background-color: #de9100;
+  color: black;
+  margin: 0;
+}
+.desc_container {
+  min-width: 20vh;
+  padding: 10px;
+  text-align: center;
+  /*box-shadow: 0px 0px 15px 10px rgb(0 0 0 / 30%);*/
+  transition: all 300ms;
+}
+
+.desc_img {
+  width: 17rem;
+  margin: 20px;
+  border-radius: 5px;
+  transition: all 300ms;
+}
+
+.desc_img:hover {
+  transform: translateY(20px);
+}
+
+.especialidades {
+  background-color: #ffb213;
+  color: black;
+  padding: 10px;
+}
+.desc_logo {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+}
+.contact_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.desc_p {
+  text-align: justify;
+  margin: 20px;
+}
+
+.desc_p h2 {
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  .desc_img {
+    margin: 0 20px;
+  }
+  .especialidades {
+    margin: 40px auto;
+    height: 70vh;
+  }
+  .menucontainer {
+    height: 70vh;
+  }
+  .desc_p {
+    width: 600px;
+    margin-top: 10px;
+    margin: 20px;
+    text-align: justify;
+  }
+  .desc_p h2 {
+    text-align: center;
+  }
+  .desc_container {
+    align-items: center;
+    margin: 0;
+  }
+  .visitanoscontainer {
+    display: flex;
+    height: 70vh;
+  }
+}

@@ -1,0 +1,22 @@
+.contactH2 {
+  text-align: center;
+}
+.contact_container {
+  background-color: #f3d11f;
+  color: black;
+  width: 100%;
+  padding: 50px;
+}
+
+.fullDivMenuSection {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+@media (min-width: 720px) {
+  .contact_container {
+    height: 70vh;
+  }
+}
