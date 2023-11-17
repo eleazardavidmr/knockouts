@@ -17,10 +17,9 @@
 }
 .hero h1 {
   color: white;
-  margin-top: 90px;
   font-size: 2rem;
   text-align: center;
-  padding: 5px;
+  margin-bottom: 80px;
 }
 .hero_btn {
   padding: 20px 30px;

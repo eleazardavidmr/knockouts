@@ -50,8 +50,7 @@
   align-items: center;
 }
 .desc_p {
-  text-align: justify;
-  margin: 20px;
+  margin: 40px 10px 40px 10px;
 }
 
 .desc_p h2 {
@@ -73,7 +72,6 @@
     width: 600px;
     margin-top: 10px;
     margin: 20px;
-    text-align: justify;
   }
   .desc_p h2 {
     text-align: center;
