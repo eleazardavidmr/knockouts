@@ -30,7 +30,8 @@
 }
 
 .desc_img:hover {
-  transform: translateY(20px);
+    scale: 1.08;
+    cursor: pointer;
 }
 
 .especialidades {
