@@ -1,18 +1,27 @@
-import styles from "../componentsCss/desc.module.css";
-import {motion} from "framer-motion"
-import {Navbar} from './Navbar'
-export function Desc() {
+import { Navbar } from './Navbar'
+import styles from '../componentsCss/about.module.css'
+import { motion } from 'framer-motion'
 
-  return (
 
-    <> 
-    <Navbar />
-      <section className={styles.desc}>
-        <section
-          className={`${styles.visitanoscontainer} ${styles.desc_container}`}
-        >
-          <motion.p className={styles.desc_p}>
-            <h2>¡Visitanos!</h2>
+export function About(){
+	return(
+
+		<>
+		<Navbar />
+	<section className={styles.fullAbout}>
+			<div  className={styles.intro}>
+				<motion.img initial={{scale: 0.5, opacity: 0}} animate={{scale: 1.1, opacity: 1}} transition={{duration: 1, delay: 0.5}}  src="../src/components/img/owners.jpeg" className={styles.ownersImg} alt="Owners"/>
+			<p>Somos una empresa familiar </p>
+			</div>
+	<section className={styles.desc}>
+
+          <motion.p
+          	initial={{ opacity: 0, scale: 0 }}
+  			whileInView={{ opacity: 1, scale: 1 }}
+  			viewport={{ once: true }}
+  			transition={{duration: 0.5}}
+  			className={styles.desc_p}>
+            <p>¡Visitanos!</p>
             Tenemos una amplia variedad de opciones entre pizzas🍕, choco
             Knockouts🍫, y calzones. ¡Estamos seguros de que todo te
             encantará!🥰🤩 Deliciosas pizzas, excelente atencion y un genial
@@ -20,11 +29,17 @@ export function Desc() {
             visitarnos! Nuestros ingredientes los hallarás frescos y deliciosos
             disponemos de amplia variedad: jamon, chistorra, maiz, tocineta,
             chorizo, campiñones y muchos más.
-            <h2>¡Te esperamos!</h2>
+            <p>¡Te esperamos!</p>
           </motion.p>
 
-          <motion.p className={styles.desc_p}>
-            <h2>Nuestra misión y visión</h2>
+          <motion.p
+          	initial={{ opacity: 0, scale: 0 }}
+  			whileInView={{ opacity: 1, scale: 1 }}
+  			viewport={{ once: true }}
+  			transition={{duration: 0.5}}
+
+          	className={styles.desc_p}>
+            <p>Nuestra misión y visión</p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             minima ut eaque aliquam. Ad iusto repellendus, aliquam hic quidem
             rem cupiditate repudiandae commodi quod, magnam dolorum nam magni
@@ -33,8 +48,10 @@ export function Desc() {
             assumenda placeat aliquid recusandae expedita labore vel molestias
             ipsum necessitatibus delectus, similique voluptate. Nihil, iusto!
           </motion.p>
-        </section>
+        
       </section>
+	</section>
     </>
-  );
+
+	)
 }

@@ -1,17 +1,18 @@
 import styles from "../componentsCss/contact.module.css";
-import stylesDesc from "../componentsCss/desc.module.css";
+import { Navbar } from './Navbar'
 export function Contact() {
   return (
     <>
+    <Navbar />
       <div className={styles.fullDivMenuSection}>
         <section className={`${styles.contact_container}`}>
           <h2 className={styles.contactH2}>Contáctanos:</h2>
-          <div className={stylesDesc.contact_div}>
+          <div className={styles.contact_div}>
             <img
               src="src/components/img/hogar-logo.png"
               id="ig-logo-sr"
               alt="direccion"
-              className={stylesDesc.desc_logo}
+              className={styles.desc_logo}
             />
             <p>
               <strong>Santa Rita: </strong>Av. Alfaragua, diagonal a la
@@ -21,32 +22,32 @@ export function Contact() {
             <br />
           </div>
 
-          <div className={stylesDesc.contact_div}>
+          <div className={styles.contact_div}>
             <img
               src="src/components/img/hogar-logo.png"
               alt="direccion"
-              className={stylesDesc.desc_logo}
+              className={styles.desc_logo}
             />
             <p>
               <strong>La Morita I: </strong>Detrás de Makro
             </p>
           </div>
 
-          <div className={stylesDesc.contact_div}>
+          <div className={styles.contact_div}>
             <img
               src="src/components/img/instagram-logo.png"
               id="instagram-logo-img"
-              className={stylesDesc.desc_logo}
+              className={styles.desc_logo}
               alt="instagram"
             />
-            <p>@knockoutspizzas</p>
+            <a href="https://instagram.com/knockoutspizzas" className={styles.ig_a} >@knockoutspizzas</a>
           </div>
 
-          <div className={`${stylesDesc.contact_div} ${styles.directions}`}>
+          <div className={`${styles.contact_div} ${styles.directions}`}>
             <img
               src="src/components/img/whatsapp-logo.png"
               alt="whatsapp"
-              className={stylesDesc.desc_logo}
+              className={styles.desc_logo}
               id="whatsapp-logo-img"
             />
             <p>
@@ -55,7 +56,7 @@ export function Contact() {
             <img
               src="src/components/img/whatsapp-logo.png"
               alt="whatsapp"
-              className={stylesDesc.desc_logo}
+              className={styles.desc_logo}
             />
             <p>
               <strong>Sede La Morita I: </strong>+58 412 8480076
