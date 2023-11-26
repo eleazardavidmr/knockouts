@@ -1,5 +1,10 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import styles from "../componentsCss/contact.module.css";
 import { Navbar } from './Navbar'
+import hogar_logo from '../img/hogar-logo.png'
+import instagram_logo_png from '../img/instagram-logo.png'
+import whatsapp_logo from '../img/whatsapp-logo.png'
 export function Contact() {
   return (
     <>
@@ -9,7 +14,7 @@ export function Contact() {
           <h2 className={styles.contactH2}>Contáctanos:</h2>
           <div className={styles.contact_div}>
             <img
-              src="src/components/img/hogar-logo.png"
+              src={hogar_logo}
               id="ig-logo-sr"
               alt="direccion"
               className={styles.desc_logo}
@@ -24,7 +29,7 @@ export function Contact() {
 
           <div className={styles.contact_div}>
             <img
-              src="src/components/img/hogar-logo.png"
+              src={hogar_logo}
               alt="direccion"
               className={styles.desc_logo}
             />
@@ -35,7 +40,7 @@ export function Contact() {
 
           <div className={styles.contact_div}>
             <img
-              src="src/components/img/instagram-logo.png"
+              src={instagram_logo_png}
               id="instagram-logo-img"
               className={styles.desc_logo}
               alt="instagram"
@@ -45,7 +50,7 @@ export function Contact() {
 
           <div className={`${styles.contact_div} ${styles.directions}`}>
             <img
-              src="src/components/img/whatsapp-logo.png"
+              src={whatsapp_logo}
               alt="whatsapp"
               className={styles.desc_logo}
               id="whatsapp-logo-img"
@@ -54,7 +59,7 @@ export function Contact() {
               <strong>Sede Santa Rita: </strong>+58 412 87388
             </p>
             <img
-              src="src/components/img/whatsapp-logo.png"
+              src={whatsapp_logo}
               alt="whatsapp"
               className={styles.desc_logo}
             />

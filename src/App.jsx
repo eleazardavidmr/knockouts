@@ -1,13 +1,16 @@
+import ReactDOM from 'react-dom'
+import React from 'react';
 import { Navbar } from "./components/Navbar"
 import { Hero } from "./components/Hero";
-import { Desc } from "./components/Desc";
+import { Footer } from './components/Footer'
 import { Routes, Route, Link, Navigate } from "react-router-dom";
-import { Contact } from "./components/Contact";
+
 export function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
+        <Navbar /> 
+        <Hero />  
+        <Footer />
     </>
   );
 }

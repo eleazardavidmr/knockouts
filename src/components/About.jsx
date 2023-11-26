@@ -1,7 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { Navbar } from './Navbar'
 import styles from '../componentsCss/about.module.css'
 import { motion } from 'framer-motion'
-
+import ownersPhoto from '../img/owners.jpeg'
 
 export function About(){
 	return(
@@ -10,8 +12,8 @@ export function About(){
 		<Navbar />
 	<section className={styles.fullAbout}>
 			<div  className={styles.intro}>
-				<motion.img initial={{scale: 0.5, opacity: 0}} animate={{scale: 1.1, opacity: 1}} transition={{duration: 1, delay: 0.5}}  src="../src/components/img/owners.jpeg" className={styles.ownersImg} alt="Owners"/>
-			<p>Somos una empresa familiar </p>
+				<motion.img initial={{scale: 0.5, opacity: 0}} animate={{scale: 1.1, opacity: 1}} transition={{duration: 0.5,}}  src={ownersPhoto} className={styles.ownersImg} alt="Owners"/>
+			<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Ut cum laboriosam esse, incidunt harum consequuntur maiores, deleniti repudiandae maxime nemo quam culpa atque temporibus, ipsam alias sequi? Eaque, ad, voluptas.</p>
 			</div>
 	<section className={styles.desc}>
 

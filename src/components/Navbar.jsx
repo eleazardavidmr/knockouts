@@ -1,11 +1,14 @@
-import logo_img from "./img/kno-logo-c-png.png";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import logo_img from "../img/kno-logo-c-png.png";
 import styles from "../componentsCss/navbar.module.css";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Desc } from './Desc'
 export function Navbar() {
+
   return (
-    <>
+<>
       <header>
         <div className={styles.h1_img_container}>
           <Link to='/' className={styles.a_container}>
@@ -26,6 +29,6 @@ export function Navbar() {
           </ul>
         </nav>
       </header>
-    </>
+</>
   );
 }

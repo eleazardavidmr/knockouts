@@ -32,8 +32,8 @@ ul {
   text-align: center;
   padding: 15px 0 15px 0;
   transition: all 500ms;
-  width: 100%;
   margin: 0;
+  min-width: 80vw;
 }
 
 .nav_a:hover {
@@ -51,7 +51,7 @@ ul {
   scale: 1.06; 
 }
 
-@media (min-width: 720px) {
+@media only screen and (min-width: 600px){
   ul {
     flex-direction: row;
     align-items: center;
@@ -77,11 +77,10 @@ ul {
     text-align: center;
   }
   .nav_a {
-    width: 200px;
+    min-width: 200px;
     margin: 5px;
     
   }
-
   .h1_img_container {
     margin: 0 0 0 100px;
     width: 200px;

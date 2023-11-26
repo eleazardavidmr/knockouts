@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import styles from "../componentsCss/desc.module.css";
 import {motion} from "framer-motion"
 import {Navbar} from './Navbar'
