@@ -28,7 +28,6 @@
   height: 90vh;
 }
 @media only screen and (max-width: 600px){
-
     .fullDivMenuSection{
       height: 100vh;
     }

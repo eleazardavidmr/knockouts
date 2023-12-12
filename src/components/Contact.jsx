@@ -56,7 +56,8 @@ export function Contact() {
               id="whatsapp-logo-img"
             />
             <p>
-              <strong>Sede Santa Rita: </strong>+58 412 87388
+              <strong>Sede Santa Rita: </strong>
+              +58 412 8738824
             </p>
             <img
               src={whatsapp_logo}

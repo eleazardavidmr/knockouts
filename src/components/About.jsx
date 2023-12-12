@@ -1,28 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Navbar } from './Navbar'
-import styles from '../componentsCss/about.module.css'
-import { motion } from 'framer-motion'
-import ownersPhoto from '../img/owners.jpeg'
+import React from "react";
+import ReactDOM from "react-dom";
+import { Navbar } from "./Navbar";
+import styles from "../componentsCss/about.module.css";
+import { motion } from "framer-motion";
+import ownersPhoto from "../img/owners.jpeg";
 
-export function About(){
-	return(
-
-		<>
-		<Navbar />
-	<section className={styles.fullAbout}>
-			<div  className={styles.intro}>
-				<motion.img initial={{scale: 0.5, opacity: 0}} animate={{scale: 1.1, opacity: 1}} transition={{duration: 0.5,}}  src={ownersPhoto} className={styles.ownersImg} alt="Owners"/>
-			<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Ut cum laboriosam esse, incidunt harum consequuntur maiores, deleniti repudiandae maxime nemo quam culpa atque temporibus, ipsam alias sequi? Eaque, ad, voluptas.</p>
-			</div>
-	<section className={styles.desc}>
-
+export function About() {
+  return (
+    <>
+      <Navbar />
+      <section className={styles.fullAbout}>
+        <div className={styles.intro}>
+          <motion.img
+            src={ownersPhoto}
+            className={styles.ownersImg}
+            alt="Owners"
+          />
+          <p>*Texto de Ejemplo*</p>
+        </div>
+        <section className={styles.desc}>
           <motion.p
-          	initial={{ opacity: 0, scale: 0 }}
-  			whileInView={{ opacity: 1, scale: 1 }}
-  			viewport={{ once: true }}
-  			transition={{duration: 0.5}}
-  			className={styles.desc_p}>
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className={styles.desc_p}
+          >
             <p>¡Visitanos!</p>
             Tenemos una amplia variedad de opciones entre pizzas🍕, choco
             Knockouts🍫, y calzones. ¡Estamos seguros de que todo te
@@ -35,25 +38,17 @@ export function About(){
           </motion.p>
 
           <motion.p
-          	initial={{ opacity: 0, scale: 0 }}
-  			whileInView={{ opacity: 1, scale: 1 }}
-  			viewport={{ once: true }}
-  			transition={{duration: 0.5}}
-
-          	className={styles.desc_p}>
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className={styles.desc_p}
+          >
             <p>Nuestra misión y visión</p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            minima ut eaque aliquam. Ad iusto repellendus, aliquam hic quidem
-            rem cupiditate repudiandae commodi quod, magnam dolorum nam magni
-            consequatur tempora! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Rem, temporibus nam. Sapiente enim cupiditate eius
-            assumenda placeat aliquid recusandae expedita labore vel molestias
-            ipsum necessitatibus delectus, similique voluptate. Nihil, iusto!
+            *Texto de Ejemplo*
           </motion.p>
-        
+        </section>
       </section>
-	</section>
     </>
-
-	)
+  );
 }
